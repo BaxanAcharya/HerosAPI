@@ -8,11 +8,11 @@ import retrofit2.http.POST;
 
 public interface UserApi {
 
-    //create employee
+    //create user
     @POST("users/signup")
     Call<Void> registerUser(@Body User user);
 
-    //login employee
+    //login user
     @POST("users/login")
     Call<Void> loginUser(@Body User user);
 
